@@ -1,0 +1,297 @@
+// Copyright (c) Microsoft. All rights reserved.
+
+@import 'variables';
+
+// TODO: Replace all explicit HEX codes with variable names
+
+$themes: (
+  dark: (
+    // TODO - Remove START
+    // Highs
+    colorHighest: $colorWhite,
+    // TODO - Remove END
+
+    // Functional colors
+    colorAlert: $colorAlert,
+    colorWarning: $colorWarning,
+    colorSystem: $colorSystem,
+    colorError: $colorError,
+
+    // App - START
+    colorSelectionText: $colorWhite,
+    colorSelectionBg: #60AAFF,
+    // App - END
+
+    // Grid - START
+    colorGridScrollBar: $colorCharcoal,
+    colorGridRowBackground: $colorMidnight,
+    colorGridCellText: $colorWhite,
+    colorGridRowHoverBackground: $colorCharcoal,
+    colorGridSelectedRowBorder: #60aaff,
+    colorGridHeaderText: $colorSmoke,
+
+    colorCellRendererSvgFill: $colorSmoke,
+    colorCellRendererSvgFillHighlight: $colorWhite,
+    colorCellRendererText: $colorSmoke,
+    colorCellRendererTextHighlight: $colorWhite,
+    // Grid - END
+
+    // Btn - START
+    colorBtnOutlineFocus: $colorSmoke,
+
+    colorBtnText: $colorWhite,
+    colorBtnBackground: transparent,
+    colorBtnSvgFill: $colorSmoke,
+
+    colorBtnTextHover: $colorWhite,
+    colorBtnBackgroundHover: transparent,
+    colorBtnSvgFillHover: $colorWhite,
+
+    colorBtnTextActive: $colorWhite,
+    colorBtnBackgroundActive: transparent,
+    colorBtnSvgFillActive: $colorSmoke,
+
+    colorBtnTextDisabled: $colorAsh,
+    colorBtnBackgroundDisabled: transparent,
+    colorBtnSvgFillDisabled: $colorAsh,
+
+    colorBtnPrimaryText: $colorNoir,
+    colorBtnPrimaryBackground: $colorSmoke,
+    colorBtnPrimarySvgFill: $colorNoir,
+
+    colorBtnPrimaryTextHover: $colorWhite,
+    colorBtnPrimaryBackgroundHover: $colorGraphite,
+    colorBtnPrimarySvgFillHover: $colorWhite,
+
+    colorBtnPrimaryTextActive: $colorSmoke,
+    colorBtnPrimaryBackgroundActive: $colorCharcoal,
+    colorBtnPrimarySvgFillActive: $colorSmoke,
+
+    colorBtnPrimaryTextDisabled: $colorSmoke,
+    colorBtnPrimaryBackgroundDisabled: transparent,
+    colorBtnPrimarySvgFillDisabled: $colorSmoke,
+    // Btn - END
+
+    // Page Content Colors - START
+    colorContentBackground: $colorNoir,
+    colorContentText: $colorWhite,
+    colorContentTextDim: $colorSmoke,
+
+    colorFlyoutBackground: $colorNoir,
+    colorFlyoutText: $colorSmoke,
+    colorFlyoutSectionBorder: $colorLead,
+    colorFlyoutDropShadow: rgba(0, 0, 0, 0.6),
+
+    colorPropertyGridBorder: $colorLead,
+    colorPropertyGridBottomBorder: $colorCharcoal,
+    colorScrollBarBackground: $colorMidnight,
+    colorScrollBarButton: $colorLead,
+    // Page Content Colors - END
+
+    // Header Colors - START
+    colorHeaderDropdown: $colorNoir,
+    colorHeaderText: $colorSmoke,
+    colorHeaderIconHover: $colorWhite,
+    colorHeaderItemBgHover: $colorMidnight,
+    colorHeaderBorderColor: $colorLead,
+    colorHeaderItemContainerBorderColor: $colorLead,
+    // Header Colors - END
+
+    // Nav Colors - START
+    colorNavBg: $colorCharcoal,
+    colorNavText: $colorWhite,
+    colorNavItemBgHover: $colorMidnight,
+    colorNavItemIcon: $colorSmoke,
+    // Nav Colors - END
+
+    // Context Menu Colors - START
+    colorContextMenuBg: $colorNoir,
+    colorContextMenuBtnBgHover: $colorMidnight,
+    colorContextMenuBtnTextHover: $colorWhite,
+    colorContextMenuBorderColor: $colorLead,
+    colorContextMenuBtnSvgFill: $colorWhite,
+    // Context Menu Colors - END
+
+    // Dashboard Panel Colors - START
+    colorDashboardMapPopupText: $colorNoir,
+    colorDashboardPanelText: $colorWhite,
+    colorDashboardPanelHeaderBg: $colorCharcoal,
+    colorDashboardPanelContentBg: $colorMidnight,
+    colorDashboardPanelOverlayBg: rgba(0, 0, 0, .5),
+    colorDashboardPanelErrorOverlayBg: $colorMidnight,
+    // Dashboard Panel Colors - END
+
+    // Toggle Btn Colors - START
+    colorEnableToggleBackground: $colorGunmetal,
+    colorToggle: $colorWhite,
+    colorDisableToggleBackground: $colorNoir,
+    colorDisabledLine: $colorSmoke,
+    // Toggle Btn Colors - END
+
+    // Forms - START
+    colorFileUploadText: $colorNoir,
+
+    colorSelectBackground: $colorNoir,
+    colorSelectOptionFocusedBg: $colorCharcoal,
+    colorSelectDisabledText: $colorAsh,
+    colorSelectBorderColor: $colorStone,
+    colorSelectText: $colorWhite,
+    colorSelectPlaceholderText: $colorStone,
+
+    colorInputText: $colorSmoke,
+    colorInputPlaceholderText: $colorStone,
+    colorInputBorderColor: $colorGraphite,
+    colorInputBorderHoverColor: $colorSmoke,
+    colorDisabledInputBg: $colorGraphite,
+    colorSelectedRadioBtnCenter: $colorWhite,
+
+    colorFormActionsBorderColor: $colorGraphite,
+    colorDurationLabelText: $colorSmoke,
+    // Forms - END
+  ),
+  light: (
+    // TODO - Remove START
+    // Highs
+    colorHighest: $colorWhite,
+    // TODO - Remove END
+
+    // Functional colors
+    colorAlert: $colorAlert,
+    colorWarning: #f4ca2c,
+
+    colorSystem: $colorSystem,
+    colorError: $colorError,
+
+    // App - START
+    colorSelectionText: #212121,
+    colorSelectionBg: #136BFB,
+    // App - END
+
+    // Grid - START
+    colorGridScrollBar: $colorCharcoal,
+    colorGridRowBackground: $colorWhite,
+    colorGridCellText: #212121,
+    colorGridRowHoverBackground: #dadada,
+    colorGridSelectedRowBorder: #136bfb,
+    colorGridHeaderText: #767676,
+
+    colorCellRendererSvgFill: #212121,
+    colorCellRendererSvgFillHighlight: #212121,
+    colorCellRendererText: #212121,
+    colorCellRendererTextHighlight: #212121,
+    // Grid - END
+
+    // Btn - START
+    colorBtnOutlineFocus: $colorSmoke,
+
+    colorBtnText: #212121,
+    colorBtnBackground: transparent,
+    colorBtnSvgFill: #666,
+
+    colorBtnTextHover: #212121,
+    colorBtnBackgroundHover: transparent,
+    colorBtnSvgFillHover: #212121,
+
+    colorBtnTextActive: #212121,
+    colorBtnBackgroundActive: transparent,
+    colorBtnSvgFillActive: #212121,
+
+    colorBtnTextDisabled: $colorAsh,
+    colorBtnBackgroundDisabled: transparent,
+    colorBtnSvgFillDisabled: $colorAsh,
+
+    colorBtnPrimaryText: #212121,
+    colorBtnPrimaryBackground: #f4f4f4,
+    colorBtnPrimarySvgFill: #666,
+
+    colorBtnPrimaryTextHover: #212121,
+    colorBtnPrimaryBackgroundHover: #eaeaea,
+    colorBtnPrimarySvgFillHover: #666,
+
+    colorBtnPrimaryTextActive: #212121,
+    colorBtnPrimaryBackgroundActive: #c8c8c8,
+    colorBtnPrimarySvgFillActive: #666,
+
+    colorBtnPrimaryTextDisabled: #a6a6a6,
+    colorBtnPrimaryBackgroundDisabled: #f4f4f4,
+    colorBtnPrimarySvgFillDisabled: #a6a6a6,
+    // Btn - END
+
+    // Page Content Colors - START
+    colorContentBackground: #f2f2f2, // Grey100
+    colorContentText: #212121,
+    colorContentTextDim: #767676,
+
+    colorFlyoutBackground: #fff,
+    colorFlyoutText: #212121,
+    colorFlyoutSectionBorder: #c8c8c8,
+    colorFlyoutDropShadow: rgba(0, 0, 0, 0.1),
+
+    colorPropertyGridBorder: #c8c8c8,
+    colorScrollBarBackground: #f2f2f2,
+    colorScrollBarButton: #ccc,
+    // Page Content Colors - END
+
+    // Header Colors - START
+    colorHeaderBg: $colorNoir,
+    colorHeaderDropdown: $colorNoir,
+    colorHeaderText: $colorSmoke,
+    colorHeaderIconHover: $colorWhite,
+    colorHeaderItemBgHover: $colorMidnight,
+    colorHeaderBorderColor: #c8c8c8,
+    colorHeaderItemContainerBorderColor: $colorLead,
+    // Header Colors - END
+
+    // Nav Colors - START
+    colorNavBg: $colorCharcoal,
+    colorNavText: $colorWhite,
+    colorNavItemBgHover: $colorMidnight,
+    colorNavItemIcon: $colorSmoke,
+    // Nav Colors - END
+
+    // Context Menu Colors - START
+    colorContextMenuBg: #f2f2f2,
+    colorContextMenuBtnBgHover: #eaeaea,
+    colorContextMenuBtnTextHover: #212121,
+    colorContextMenuBtnSvgFill: #666,
+    colorContextMenuBorderColor: #c8c8c8,
+    // Context Menu Colors - END
+
+    // Dashboard Panel Colors - START
+    colorDashboardMapPopupText: $colorNoir,
+    colorDashboardPanelText: #212121,
+    colorDashboardPanelHeaderBg: $colorWhite,
+    colorDashboardPanelContentBg: $colorWhite,
+    colorDashboardPanelOverlayBg: rgba(255, 255, 255, .5),
+    colorDashboardPanelErrorOverlayBg: $colorWhite,
+    // Dashboard Panel Colors - END
+
+    // Toggle Btn Colors - START
+    colorEnableToggleBackground: $colorGunmetal,
+    colorToggle: $colorWhite,
+    colorDisableToggleBackground: $colorNoir,
+    colorDisabledLine: $colorSmoke,
+    // Toggle Btn Colors - END
+
+    // Forms - START
+    colorFileUploadText: $colorNoir,
+
+    colorSelectBackground: $colorWhite,
+    colorSelectOptionFocusedBg: #fff,
+    colorSelectDisabledText: $colorAsh,
+    colorSelectBorderColor: #c8c8c8,
+    colorSelectText: #212121,
+    colorSelectPlaceholderText: #666,
+
+    colorInputText: #212121,
+    colorInputPlaceholderText: $colorStone,
+    colorInputBorderColor: $colorGraphite,
+    colorInputBorderHoverColor: $colorSmoke,
+    colorDisabledInputBg: $colorGraphite,
+    colorSelectedRadioBtnCenter: $colorGraphite,
+
+    colorFormActionsBorderColor: $colorGraphite,
+    colorDurationLabelText: $colorSmoke,
+    // Forms - END
+  )
+);

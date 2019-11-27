@@ -1,0 +1,508 @@
+{
+  "companyName": "Contoso",
+  "header": {
+    "appName": "Azure IoT Remote Monitoring",
+    "logout": "Logout"
+  },
+  "pageNotFound": {
+    "title": "404 - Page not found",
+    "message": "Oops, we weren't able to find the page you requested."
+  },
+  "tabs": {
+    "dashboard": "Dashboard",
+    "devices": "Devices",
+    "rules": "Rules",
+    "maintenance": "Maintenance"
+  },
+  "errorFormat": "Error: {{message}}",
+  "errorCode": {
+    "noResponse": "Oops, there was no response from the server.",
+    "notLoggedIn": "You need to login to call the service.",
+    "notAuthorized": "You are not authorized to call the service.",
+    "notFound": "Oops, we were not able to find the service.",
+    "redirection": "Oops, we got a redirection error.",
+    "retryFailure": "Oops, we got a temporary error from the service but were unable to recover. Try again later.",
+    "unknown": "An unknown error occurred. {{message}}"
+  },
+  "settingsFlyout": {
+    "title": "System settings",
+    "version": "Version {{version}}",
+    "viewRelNotes": "View release notes",
+    "theme": "Theme",
+    "changeTheme": "Change the application color theme",
+    "switchTheme": "Switch to {{nextTheme}} theme",
+    "apply": "Apply",
+    "cancel": "Cancel",
+    "close": "Close",
+    "flowing": "Flowing",
+    "start": "Start",
+    "stop": "Stop",
+    "stopped": "Stopped",
+    "simulationData": "Simulation data",
+    "loading": "Loading",
+    "simulationDescription": "Start or stop simulation of devices. Stopping device simulation will minimize the cost of the solution; no simulated telemetry will be sent to your IoT Hub and alerts will not be generated for simulated devices.",
+    "toggleError": "Error updating simulation status",
+    "setLogoError": "Error updating logo",
+    "simulationLoadError": "Error loading simulation status"
+  },
+  "deviceGroupsFlyout": {
+    "actions": "Actions",
+    "cancel": "Cancel",
+    "title": "Manage device groups",
+    "create": "Create new device group",
+    "deviceGroupName": "Device group name",
+    "new": "New device group",
+    "edit": "Edit a device group",
+    "name": "Name",
+    "namePlaceHolder": "Device group name",
+    "save": "Save",
+    "errorMsg": {
+      "nameCantBeEmpty": "Name is required",
+      "fieldCantBeEmpty": "Field is required",
+      "operatorCantBeEmpty": "Operator is required",
+      "valueCantBeEmpty": "Value is required",
+      "typeCantBeEmpty": "Type is required",
+      "selectedType": "Must be of the selected type"
+    },
+    "conditions": {
+      "condition": "Condition {{headerCount}}",
+      "delete": "Delete",
+      "field": "Field",
+      "operator": "Operator",
+      "operatorPlaceholder": "> =",
+      "value": "Value",
+      "valuePlaceholder": "Enter value",
+      "type": "Type",
+      "typePlaceholder": "Select type",
+      "remove": "Remove condition"
+    },
+    "options": {
+      "EQ": "= Equals",
+      "GT": "> Greater than",
+      "LT": "< Less than",
+      "GE": ">= Greater than/equal",
+      "LE": "<= Less than/equal",
+      "Number": "Number",
+      "Text": "Text"
+    }
+  },
+  "rulesFlyout": {
+    "newRule": "New rule",
+    "ruleName": "Rule name",
+    "namePlaceholder": "Enter rule name",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter rule description",
+    "deviceGroup": "Device group",
+    "deviceGroupPlaceholder": "Select device group",
+    "conditions": "Conditions",
+    "addCondition": "Add condition",
+    "condition": {
+      "condition": "Condition",
+      "field": "Field",
+      "fieldPlaceholder": "Select field",
+      "calculation": "Calculation",
+      "calculationPlaceholder": "select",
+      "timePeriod": "Time period",
+      "operator": "Operator",
+      "operatorPlaceholder": ">=",
+      "value": "Value",
+      "valuePlaceholder": "Enter value"
+    },
+    "severityLevel": "Severity level",
+    "ruleStatus": "Rule status",
+    "devicesAffected": "Devices affected by this rule",
+    "apply": "Apply",
+    "cancel": "Cancel"
+  },
+  "dashboard": {
+    "noData": "No data available",
+    "panels": {
+      "alerts": {
+        "header": "Alerts"
+      },
+      "analytics": {
+        "header": "Analytics",
+        "topRule": "Top rules triggered",
+        "deviceTypeAlerts": "Alert by device type",
+        "criticalAlerts": "Critical alerts",
+        "currentWindow": "Currently",
+        "previousWindow": "Previously"
+      },
+      "map": {
+        "header": "Device locations",
+        "runtimeError": "An error occurred while rendering the map",
+        "notSupportedError": "Azure maps is not supported in your region"
+      },
+      "overview": {
+        "header": "Device statistics",
+        "allDevices": "All devices",
+        "critical": "Critical",
+        "warnings": "Warnings",
+        "total": "Total",
+        "connected": "Connected",
+        "notConnected": "Offline"
+      },
+      "telemetry": {
+        "header": "Telemetry"
+      }
+    }
+  },
+  "refreshBar": {
+    "refreshing": "Refreshing",
+    "lastRefreshed": "Last refreshed"
+  },
+  "devices": {
+    "noneFound": "No devices found.",
+    "refresh": "Refresh",
+    "grid": {
+      "connected": "Connected",
+      "deviceName": "Device name",
+      "deviceType": "Device type",
+      "firmware": "Firmware",
+      "lastConnection": "Last connection",
+      "no": "No",
+      "offline": "Offline",
+      "simulated": "Simulated",
+      "status": "Status",
+      "telemetry": "Telemetry",
+      "yes": "Yes"
+    },
+    "flyouts": {
+      "details": {
+        "title": "Device Details",
+        "noDevice": "Oops, we were not able to find the device.",
+        "close": "Close",
+        "connected": "Connected",
+        "notConnected": "Disconnected",
+        "simulated": "Simulated",
+        "notSimulated": "Physical",
+        "diagnostics": {
+          "title": "Diagnostics",
+          "description": "Diagnostic information from device",
+          "keyHeader": "Property",
+          "valueHeader": "Value",
+          "status": "Status",
+          "lastMessage": "Last message",
+          "message": "Message",
+          "showMessage": "Click here to see raw message"
+        },
+        "methods": {
+          "title": "Methods",
+          "description": "All methods available for device",
+          "noneExist": "No methods found for this device."
+        },
+        "properties": {
+          "title": "Properties",
+          "description": "Selected properties on device",
+          "keyHeader": "Property",
+          "valueHeader": "Value",
+          "noneExist": "No properties found for this device.",
+          "copy": "Copy",
+          "copyAllProperties": "Copy a list of all properties for the device",
+          "syncing": "{{reportedPropertyValue}} (Syncing {{desiredPropertyValue}})"
+        },
+        "tags": {
+          "title": "Tags",
+          "description": "Tags applied to device",
+          "keyHeader": "Key",
+          "valueHeader": "Value",
+          "noneExist": "No tags found for this device."
+        },
+        "telemetry": {
+          "title": "Telemetry"
+        }
+      },
+      "delete": {
+        "title": "Delete",
+        "header": "Delete device",
+        "description": "This action will delete the devices permanently from the platform.",
+        "simulatedNotSupported": "Deleting simulated devices is not currently supported, this action will only be taken on the physical devices.",
+        "summaryHeader": "Summary",
+        "affected": "Affected devices",
+        "cancel": "Cancel",
+        "apply": "Delete",
+        "pending": "Deleting devices... ",
+        "applySuccess": "devices deleted successfully!",
+        "close": "Close"
+      },
+      "jobs": {
+        "title": "Jobs",
+        "noDevices": "Oops, we were not able to find any selected devices.",
+        "summaryHeader": "Summary",
+        "affected": "Affected devices",
+        "cancel": "Cancel",
+        "apply": "Apply",
+        "pending": "Submitting job...",
+        "applySuccess": "Job submitted successfully!",
+        "close": "Close",
+        "selectJob": "Select job",
+        "jobName": "Job Name",
+        "jobNameHint": "Enter job name",
+        "jobNameHelpMessage": "Only letters and numbers are allowed",
+        "viewStatus": "View job status",
+        "validation": {
+          "required": "Is required"
+        },
+        "tags": {
+          "radioLabel": "Tag",
+          "title": "Tags on selected devices",
+          "description": "Tags in common on selected devices",
+          "keyHeader": "Key",
+          "valueHeader": "Value",
+          "typeHeader": "Type",
+          "typeNumber": "Number",
+          "typeString": "Text",
+          "noneExist": "No common tags found for the selected devices.",
+          "add": "Add tag"
+        },
+        "methods": {
+          "radioLabel": "Run method",
+          "title": "Run method",
+          "description": "All available methods for device or group of devices",
+          "methodName": "Method name",
+          "methodNameHint": "Select method",
+          "firmwareVersion": "Firmware Version",
+          "firmwareVersionHint": "1.0.1",
+          "firmwareUri": "Firmware URI",
+          "firmwareUriHint": "Enter firmware URI value"
+        },
+        "properties": {
+          "radioLabel": "Reconfigure",
+          "title": "Reconfigure",
+          "description": "Available properties and values to change",
+          "keyHeader": "Property",
+          "valueHeader": "Value",
+          "typeHeader": "Type",
+          "typeNumber": "Number",
+          "typeString": "Text",
+          "noneExist": "No common properties found for the selected devices.",
+          "syncing": "{{reportedPropertyValue}} (Syncing {{desiredPropertyValue}})"
+        }
+      },
+      "new": {
+        "contextMenuName": "New device",
+        "title": "New device",
+        "summaryHeader": "Provision summary",
+        "affected": "Devices to provision",
+        "cancel": "Cancel",
+        "apply": "Apply",
+        "pending": "Provisioning devices... ",
+        "applySuccess": "Devices provisioned successfully",
+        "close": "Close",
+        "validation": {
+          "required": "Is required",
+          "greaterThanZero": "Must be greater than zero"
+        },
+        "count": {
+          "label": "Number of devices"
+        },
+        "deviceType": {
+          "label": "Device type",
+          "simulated": "Simulated",
+          "physical": "Physical"
+        },
+        "deviceId": {
+          "label": "Device ID",
+          "hint": "Enter device ID ",
+          "sysGenerated": "System generated device IDs"
+        },
+        "deviceIdExample": {
+          "label": "Device ID example",
+          "format": "{{deviceName}}-{#####}",
+          "deviceName": "{Device name}"
+        },
+        "deviceModel": {
+          "label": "Device model",
+          "hint": "Select existing device type"
+        },
+        "authenticationType": {
+          "label": "Authentication type",
+          "symmetric": "Symmetric key",
+          "x509": "X.509"
+        },
+        "authenticationKey": {
+          "label": "Authentication key",
+          "generateKeys": "Auto generate keys",
+          "manualKeys": "Enter keys manually",
+          "hint": "Enter your key here",
+          "primaryKey": "Primary Key",
+          "primaryKeyConnection": "Connection string primary Key",
+          "secondaryKey": "Secondary Key",
+          "secondaryKeyConnection": "Connection string secondary Key",
+          "primaryThumbprint": "Primary thumbprint",
+          "secondaryThumbprint": "Secondary thumbprint"
+        }
+      },
+      "SIMManagement": {
+        "title": "SIM Management",
+        "provider" : "Provider",
+        "summaryHeader": "Summary and instructions",
+        "here": "here",
+        "select": "Select...",
+        "header":{
+          "telefonica": "As a Telefónica IoT customer you have the advantage of adding this feature to enrich automatically your Azure Remote Monitoring Solution with the connectivity data available in Telefónica IoT Connectivity Platform (Network Information, Data Consumption & Network Based Location)."        },
+        "description": {
+          "telefonica": "This feature is in Preview. In order to sync your connectivity data into Azure Remote Monitoring Solution, please fill a request <1><0>url</0></1>, select the option “Azure Remote Monitoring” and include your contact data and we will automatically activate your account. \n\nIf you are not a Telefónica client yet and you want to enjoy this or other IoT Connectivity Cloud Ready services, you can contact us <1><0>url</0></1> and select the option “Connectivity”; we will be glad to help you."
+        },
+        "operator":{
+          "telefonica": "Telefónica"
+        }
+      }
+    }
+  },
+  "rules": {
+    "severity": {
+      "info": "Info",
+      "warning": "Warning",
+      "critical": "Critical"
+    },
+    "grid": {
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "ruleName": "Rule name",
+      "description": "Description",
+      "severity": "Severity",
+      "deviceGroup": "Device group",
+      "trigger": "Trigger",
+      "notificationType": "Notification type",
+      "status": "Status",
+      "count": "Count",
+      "lastTrigger": "Last trigger",
+      "maintenanceLog": "Maintenance log",
+      "unknown": "Unknown",
+      "explore": "Explore"
+    },
+    "flyouts": {
+      "edit": "Edit",
+      "enable": "Enable",
+      "disable": "Disable",
+      "changeStatus": "Change status",
+      "newRule": "New rule",
+      "editRule": "Edit rule",
+      "statusTitle": "Change status",
+      "ruleEditor": {
+        "ruleName": "Rule name",
+        "namePlaceholder": "Enter rule name",
+        "description": "Description",
+        "descriptionPlaceholder": "Enter rule description",
+        "deviceGroup": "Device group",
+        "deviceGroupPlaceholder": "Select device group",
+        "conditions": "Conditions",
+        "addCondition": "Add condition",
+        "delete": "Delete",
+        "calculation": "Calculation",
+        "calculationPlaceholder": "Select",
+        "timePeriod": "Time period (in minutes)",
+        "condition": {
+          "condition": "Condition",
+          "field": "Field",
+          "fieldPlaceholder": "Select field",
+          "operator": "Operator",
+          "operatorPlaceholder": ">=",
+          "value": "Value",
+          "valuePlaceholder": "Enter value"
+        },
+        "calculationOptions": {
+          "average": "Average",
+          "instant": "Instant"
+        },
+        "validation": {
+          "required": "Is required",
+          "nan": "Must be a number"
+        },
+        "severityLevel": "Severity level",
+        "ruleStatus": "Rule status",
+        "ruleEnabled": "Enabled",
+        "ruleDisabled": "Disabled",
+        "devicesAffected": "devices affected by this rule",
+        "apply": "Apply",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "fileInput": {
+    "upload": "Upload"
+  },
+  "applicationSettings": {
+    "nameAndLogo": "Name and logo",
+    "nameLogoDescription": "Edit logo and name in the site header.",
+    "replaceLogo": "Replace logo image",
+    "logoDescription": "Recommended logo size: 24 x 24 px.\nMaximum logo size: 300 KB.\nSupported file formats:\n\t.SVG\n\t.PNG\n\t.JPEG\n\t.JPG",
+    "applicationName": "Application name",
+    "currentLogo": "Current logo",
+    "edit": "Edit",
+    "checkmark": "Checkmark",
+    "uploadError": "Unable to upload file, please check the file type/size and try again.",
+    "error": "Error"
+  },
+  "maintenance": {
+    "acknowledge": "Acknowledge",
+    "acknowledged": "Acknowledged",
+    "alertOccurrences": "Alert Occurrences",
+    "alertedDeviceTelemetry": "Alerted device's telemetry",
+    "alertedDevices": "Alerted devices",
+    "all": "All",
+    "close": "Close",
+    "closed": "Closed",
+    "critical": "Critical",
+    "devices": "Devices",
+    "failedJobs": "Failed jobs",
+    "jobs": "Jobs",
+    "lastEvent": "Last event",
+    "noData": "No data",
+    "noOccurrenceSelected": "No occurrences selected",
+    "notifications": "Alerts",
+    "open": "open",
+    "openAlerts": "Open Alerts",
+    "relatedInfo": "Related information",
+    "ruleDetail": "Rule detail",
+    "ruleDetailsDesc": "Manage alert occurrences associated to this rule in the section below, and use the associated information to troubleshoot each occurrence.",
+    "severity": "Severity",
+    "succeeded": "Succeeded",
+    "telemetry": "Telemetry",
+    "title": "Maintenance",
+    "total": "Total",
+    "warning": "Warning",
+    "alertGrid": {
+      "totalCount": "Total count",
+      "open": "Open",
+      "acknowledged": "Acknowledged",
+      "closed": "Closed",
+      "lastOccurrence": "Last occurrence"
+    },
+    "jobGrid": {
+      "jobName": "Job Name",
+      "status": "Status",
+      "operation": "Operation",
+      "noDevices": "No. of devices",
+      "succeeded": "Succeeded",
+      "failed": "Failed",
+      "startTime": "Start time",
+      "endTime": "End time"
+    },
+    "jobStatusGrid": {
+      "deviceIdAffected": "Device ID affected",
+      "lastReturnMsg": "Last return message"
+    },
+    "alertOccGrid": {
+      "occurrence": "Occurrence",
+      "triggerDevice": "Trigger device",
+      "time": "Time"
+    },
+    "jobStatus": {
+      "enqueued": "Enqueued",
+      "running": "Running",
+      "completed": "Completed",
+      "failed": "Failed",
+      "cancelled": "Cancelled",
+      "scheduled": "Scheduled",
+      "queued": "Queued"
+    }
+  },
+  "timeInterval": {
+    "PT1H": "Last hour",
+    "P1D": "Last day",
+    "P7D": "Last week",
+    "P1M": "Last month"
+  }
+}
